@@ -1,0 +1,27 @@
+/* seleção de elemento  */
+ 
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: purple;
+}
+
+/* seleção do id  */
+#tabela {
+    text-align: center;
+    background-color: purple;
+}
+/* seleção de classe */
+.negrito {
+    font-weight: bolder;
+}
+p.courier {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3 {
+    font-style: italic;
+}
+
+form button{
+    background-color: brown;
+}

@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>desafio 2</title>
-
+    <title>Desafio 2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <section>
-        <h2>Cadastro de participação</h2>
+        <!-- CSS inline style -->
+        <h2 style="color: blue;background-color: aqua;">Cadastro de participação</h2>
         <h2>Envie uma mensagem </h2>
         <form action="#">
-            <label for="nome">Nome completo</label><br />
+            <label for="nome" class="negrito">Nome completo</label><br />
             <input type="text" id="nome" name="nome" placeholder="digite seu nome ..."><br>
 
-            <label for="senha">senha:</label><br>
+            <label for="senha" class="negrito">senha:</label><br>
             <input type="password" name="senha" id="senha" placeholder="Digite sua senha"><br>
 
             <label>Turno:</label><br>
