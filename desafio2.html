@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <!-- CSS inline style -->
+        <h2 style="color: blue;background-color: aqua;">Cadastro de participação</h2>
+        <h2>Envie uma mensagem </h2>
+        <form action="#">
+            <label for="nome" class="negrito">Nome completo</label><br />
+            <input type="text" id="nome" name="nome" placeholder="digite seu nome ..."><br>
+
+            <label for="senha" class="negrito">senha:</label><br>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha"><br>
+
+            <label>Turno:</label><br>
+                <input type="radio" id="matutino" name="turno" value="matutino" required>
+                <label for="matutino">Matutino</label>
+
+                <input type="radio" id="vespertino" name="turno" value="vespertino">
+                <label for="vespertino">Vespertino</label>
+
+                <input type="radio" id="noturno" name="turno" value="noturno">
+                <label for="noturno">Noturno</label><br>
+
+                <label>Áreas de Foco:</label>
+
+                <input type="checkbox" id="tecnologia" name="interesse" value="tecnologia">
+                <label for="tecnologia">Tecnologia</label>
+                
+                <input type="checkbox" id="programação" name="interesse" value="programação">
+                <label for="programação">programação </label>
+
+                <input type="checkbox" id="enfermagem" name="interesse" value="enfermagem">
+                <label for="enfermagem">enfermagem</label>
+                
+                <input type="checkbox" id="humanas" name="interesse" value="humanas">
+                <label for="humanas">Humanas</label>
+
+                <label for="oficina">Escolha a Oficina:</label><br>
+                <select id="oficina" name="oficina" required>
+                    <option value="" disabled selected>Selecione uma oficina...</option>
+                    <option value="inteligencia_artificial">Inteligência Artificial e Robótica (Tecnologia)</option>
+                    <option value="desenvolvimento_web">Desenvolvimento Web na Prática (Programação)</option>
+                    <option value="primeiros_socorros">Primeiros Socorros e Cuidados Básicos (Enfermagem)</option>
+                    <option value="debate_atualidades">Debate e Atualizações (Humanas)</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="observacoes">Observações:</label><br>
+                <textarea id="observacoes" name="observacoes" rows="4" cols="40"></textarea>
+            </p>
+
+            <button type="submit">Confirmar Inscrição</button>
+        </fieldset>
+    </form>
+
+    <h2>Participantes Inscritos</h2>
+    
+    <!-- Tabela de Participantes -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Turno</th>
+                <th>Oficina Escolhida</th>
+                <th>Áreas de Foco</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Annanda</td>
+                <td>Matutino</td>
+                <td>Inteligência Artificial e Robótica</td>
+                <td>Tecnologia</td>
+            </tr>
+            <tr>
+                <td>alessandro erick</td>
+                <td>Vespertino</td>
+                <td>Desenvolvimento Web na Prática</td>
+                <td>Programação, Tecnologia</td>
+            </tr>
+            <tr>
+                <td>Benicio ravi</td>
+                <td>Matutino</td>
+                <td>Debate e Atualidades Mundiais</td>
+                <td>Humanas</td>
+            </tr>
+            <tr>
+                <td>Uilton Felipe</td>
+                <td>Noturno</td>
+                <td>Primeiros Socorros e Cuidados Básicos</td>
+                <td>Enfermagem</td>
+            </tr>
+            <tr>
+                <td>Giovanna</td>
+                <td>Vespertino</td>
+                <td>Debate e Atualidades Mundiais</td>
+                <td>Humanas</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+        
+        </form>
