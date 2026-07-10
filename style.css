@@ -1,27 +1,125 @@
-/* seleção de elemento  */
- 
-h2 {
-    font-family: 'Courier New', Courier, monospace;
-    color: purple;
+@import url("https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --yale-blue: #2a4662;
+  --dusty-denim: #6c91c2;
+  --glaucous: #646fab;
+  --iron-grey: #4c5b61;
+  --silver: #c5c5c5;
+  --jet-black: #2A3836;
+
 }
+
+
+/* CSS Reset */
+*{
+  margin: 0; /* espaçamento externo */
+  padding: 0; /*espaçamento interno */
+  box-sizing: border-box; /*bordas*/
+
+}
+
+
+body {
+  font-family: "Quicksand", "arial", sans-serif;
+}
+/* seleção de elemento  */
+
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--yale-blue);
+}
+
 
 /* seleção do id  */
 #tabela {
-    text-align: center;
-    background-color: purple;
+  text-align: center;
+  background-color: var(--dusty-denim);
 }
 /* seleção de classe */
 .negrito {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 p.courier {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
-h1, h2, h3 {
-    font-style: italic;
+h1,
+h2,
+h3 {
+  font-style: italic;
 }
 
-form button{
-    background-color: brown;
+form button {
+  background-color: #6c91c2;
 }
+
+img {
+  height: 30rem;
+  border-radius: 30px 15px;
+}
+
+.avatar {
+  height: 100px;
+  border-radius: 50px;
+}
+
+#nav-section {
+  margin-top: 15px;
+  /* margin-right: 15px
+  margin-bottom: 15px;
+  margin-left: 15px; */
+  /* top right bottom left */
+  /* margin: 15px 30px 50px 25px; */
+  /* top right-left bottom */
+  /* margin: 15px 30px 50px; */
+  /* top-bottom left-right */
+  /* margin: 15px 30px */
+  /* Mesmo valor para tudo (TRBL) */
+  /* margin: 30px */
+}
+
+#nav-sections ul {
+  list-style-type: none;
+}
+
+#nav-sections li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color:var(--yale-blue);
+  background-color: var(--dusty-denim);
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+a:hover {
+  color:var(--jet-black);
+  box-shadow: 0 0 10px;
+}
+
+#nav-links ul {
+  list-style-type: none;
+}
+
+#nav-links li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color:var(--white);
+  background-color:var(--iron-grey);
+  border-radius: 5px;
+}
+
+a:hover {
+  color:var(--jet-black);
+  box-shadow: 0 0 50px;
+}
+
