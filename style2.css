@@ -2,98 +2,156 @@
 
 :root {
   --white: #ffffff;
-  --black: #000;
+  --black: #000000;
   --yale-blue: #2a4662;
   --dusty-denim: #6c91c2;
   --glaucous: #646fab;
   --iron-grey: #4c5b61;
   --silver: #c5c5c5;
   --jet-black: #2A3836;
+  
+  /* Fontes do desafio */
+  --fonte-corpo: "Quicksand", "Arial", sans-serif;
+  --fonte-titulos: "Montserrat", sans-serif;
 }
 
 /* CSS Reset */
 * {
-  margin: 0; /* espaçamento externo */
-  padding: 0; /*espaçamento interno */
-  box-sizing: border-box; /*bordas*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* 1. SELETORES DE ELEMENTO */
 body {
-  font-family: "Quicksand", "Arial", sans-serif;
+  font-family: var(--fonte-corpo);
   background-color: #f4f6f8; 
   color: var(--jet-black);
-  padding: 20px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
 }
 
-/* seleção de elemento  */
-h2 {
-  font-family: "Courier New", Courier, monospace;
-  color: var(--yale-blue);
-  margin-bottom: 15px;
+header {
+  background-color: var(--yale-blue); /* Fundo diferente do body */
+  color: var(--white);                /* Texto diferente */
+  text-align: center;
+  padding: 40px 20px;
 }
 
-h1, h2, h3 {
+header h1 {
+  font-family: var(--fonte-titulos);
+  font-size: 2.2rem;
   font-style: italic;
   margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+footer {
+  background-color: var(--iron-grey); /* Fundo diferente do body e do header */
+  color: var(--white);                /* Texto diferente */
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
 }
 
 
 section {
   background: var(--white);
-  padding: 25px;
-  margin: 20px auto;
+  padding: 30px;
+  margin: 30px auto;
   max-width: 800px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Centralizar o menu de navegação */
+h2, h3 {
+  font-family: var(--fonte-titulos);
+  font-style: italic;
+}
+
+
+.titulo-secao {
+  font-family: var(--fonte-titulos); /* Fonte diferente do corpo */
+  color: var(--yale-blue);           /* Cor de destaque */
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--dusty-denim);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.card-programa {
+  background-color: #fdfdfd;
+  border: 2px dashed var(--dusty-denim); /* Borda diferenciada */
+  border-radius: 6px;                    /* Border-radius leve */
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;                    /* Fonte um pouco menor */
+}
+
+.card-programa h3 {
+  margin-top: 0;
+  color: var(--yale-blue);
+  font-size: 1.2rem;
+}
+
+.card-programa p {
+  margin: 5px 0;
+}
+
+
+#inicio {
+  background-color: #eef4fa; 
+  border-left: 6px solid var(--yale-blue);
+}
+
+#programacao {
+  border-left: 6px solid var(--dusty-denim); /* Borda lateral diferenciada */
+}
+
+#contato {
+  border-left: 6px solid var(--iron-grey); /* Borda lateral diferenciada */
+}
+
+
 nav {
-  text-align: center;   /* Alinha os botões no centro da tela */
-  margin: 25px 0;       /* Dá um espaço em cima e embaixo do menu */
-  width: 100%;          /* Garante que o menu ocupe a largura toda para poder centralizar */
+  text-align: center;
+  margin: 20px 0;
 }
 
 nav ul {
-  list-style-type: none; /* Tira as bolinhas pretas da lista */
+  list-style: none; /* Não mostra marcadores */
   padding: 0;
   margin: 0;
 }
 
 nav ul li {
-  display: inline-block; /* Coloca os botões lado a lado */
-  margin: 0 10px;        /* Dá um espacinho entre um botão e outro */
+  display: inline-block; /* Itens em linha */
+  margin: 0 10px;
 }
 
-
-
-
-
-
-
-
-a {
-  text-decoration: none;
-  font-weight: bold;
-  color:var(--yale-blue);
+nav a {
+  text-decoration: none; /* Sem sublinhado */
+  color: var(--white);   /* Cor diferente do texto do body */
   background-color: var(--dusty-denim);
+  font-weight: bold;
+  padding: 8px 18px;
   border-radius: 5px;
-  padding: 5px 15px;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
-a:hover {
-  color:var(--black);
-  box-shadow: 0 0 50px;
-} 
-
-a {
-  text-decoration: none;
-  color:var(--white);
-  background-color:var(--iron-grey);
-  border-radius: 5px;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 30px; 
+/* Efeito Hover nos botões */
+nav a:hover {
+  background-color: var(--yale-blue);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
