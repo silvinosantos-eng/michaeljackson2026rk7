@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@400;600&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --yale-blue: #2a4662;
+  --dusty-denim: #6c91c2;
+  --glaucous: #646fab;
+  --iron-grey: #4c5b61;
+  --silver: #c5c5c5;
+  --jet-black: #2A3836;
+}
+
+/* CSS Reset */
+* {
+  margin: 0; /* espaçamento externo */
+  padding: 0; /*espaçamento interno */
+  box-sizing: border-box; /*bordas*/
+}
+
+body {
+  font-family: "Quicksand", "Arial", sans-serif;
+  background-color: #f4f6f8; 
+  color: var(--jet-black);
+  padding: 20px;
+}
+
+/* seleção de elemento  */
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--yale-blue);
+  margin-bottom: 15px;
+}
+
+h1, h2, h3 {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+
+section {
+  background: var(--white);
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Centralizar o menu de navegação */
+nav {
+  text-align: center;   /* Alinha os botões no centro da tela */
+  margin: 25px 0;       /* Dá um espaço em cima e embaixo do menu */
+  width: 100%;          /* Garante que o menu ocupe a largura toda para poder centralizar */
+}
+
+nav ul {
+  list-style-type: none; /* Tira as bolinhas pretas da lista */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block; /* Coloca os botões lado a lado */
+  margin: 0 10px;        /* Dá um espacinho entre um botão e outro */
+}
+
+
+
+
+
+
+
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color:var(--yale-blue);
+  background-color: var(--dusty-denim);
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+a:hover {
+  color:var(--black);
+  box-shadow: 0 0 50px;
+} 
+
+a {
+  text-decoration: none;
+  color:var(--white);
+  background-color:var(--iron-grey);
+  border-radius: 5px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px; 
+}
