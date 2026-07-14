@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@400;600&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --yale-blue: #2a4662;
+  --dusty-denim: #6c91c2;
+  --glaucous: #646fab;
+  --iron-grey: #4c5b61;
+  --silver: #c5c5c5;
+  --jet-black: #2A3836;
+  
+  --fonte-corpo: "Quicksand", "Arial", sans-serif;
+  --fonte-titulos: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  background-color: #f4f6f8; 
+  color: var(--jet-black);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--yale-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 45px 20px;
+}
+
+header h1 {
+  font-family: var(--fonte-titulos);
+  font-size: 2.2rem;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+footer {
+  background-color: var(--iron-grey);
+  color: var(--white);
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 15px 0;
+  margin: 20px 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--dusty-denim);
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  margin: 0 8px;
+  border: 2px solid var(--yale-blue); 
+}
+
+nav a:hover {
+  background-color: var(--yale-blue);
+  border-color: var(--iron-grey);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#inicio, #programacao, #contato {
+  background: var(--white);
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 35px;
+  margin: 30px auto;
+}
+
+#inicio {
+  background-color: #eef4fa;
+  border-left: 6px solid var(--yale-blue);
+}
+
+.titulo-secao {
+  font-family: var(--fonte-titulos);
+  font-size: 1.8rem;
+  color: var(--yale-blue);
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border-bottom: 3px solid var(--dusty-denim); 
+}
+
+.card-programa {
+  background-color: #fdfdfd;
+  border: 2px solid var(--dusty-denim); 
+  border-radius: 6px;
+  padding: 15px 25px;
+  margin-bottom: 20px; 
+}
+
+.card-programa:last-child {
+  margin-bottom: 0;
+}
+
+.card-programa h3 {
+  margin-top: 0;
+  color: var(--yale-blue);
+  font-size: 1.2rem;
+}
+
+.card-programa p {
+  margin: 4px 0;
+}
